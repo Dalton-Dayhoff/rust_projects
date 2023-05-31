@@ -2,11 +2,11 @@ use text_io::read;
 use std::{collections::HashMap, vec};
 use rand;
 
-const MAX_LINES:i32 = 3;
+const MAX_LINES:i32 = 5;
 const MAX_BET: f64 = 50.0;
 const MIN_BET: f64 = 0.5;
-const VISIBLE_SPOTS: i32 = 3;
-const NUMBER_OF_WHEELS: i32 = 3;
+const VISIBLE_SPOTS: i32 = 5;
+const NUMBER_OF_WHEELS: i32 = 5;
 
 
 fn deposit() -> f64{
