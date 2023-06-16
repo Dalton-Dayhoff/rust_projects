@@ -1,0 +1,47 @@
+number_of_bodies = 9
+
+[solar_system]
+    [Sun]
+        mass = 1.989E+30
+        radius = 696,340
+    [Mercery]
+        distance = 57900000
+        radius = 2440
+        mass = 3.3E+22
+    [Venus]
+        distance = 108200000
+        radius = 6052
+        mass = 4.87E+24
+    [Earth]
+        radius = 6371
+        mass = 5.97E+24
+        distance = 149600000
+        [moons]
+            [the_moon]
+            radius = 1740
+            distance = 384400
+            mass = 7.347673E+22
+    [Mars]
+        radius = 3390
+        mass = 6.42E+23
+        distance = 227900000
+    [Jupiter]
+        radius = 69911
+        mass = 1.90E+27
+        distance = 778600000
+    [Saturn]
+        radius = 58232
+        mass = 5.68E+26
+        distance = 1433500000
+    [Uranus]
+        radius = 25362
+        mass = 8.68E+25
+        distance = 2872500000
+    [Neptune]
+        radius = 24622
+        mass = 1.02E+26
+        distance = 4495100000
+    [Pluto]
+        radius = 1151
+        mass = 1.309E+22
+        distance = 5900000000
