@@ -1,0 +1,8 @@
+[sudoku]
+size = 9
+difficulty = "Medium"
+
+[simulated_annealing]
+initial_temp = 100.0
+cooling_rate = 0.99
+final_temp = 0.01

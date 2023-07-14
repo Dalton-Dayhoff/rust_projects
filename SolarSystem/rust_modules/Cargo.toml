@@ -7,3 +7,7 @@ edition = "2021"
 toml = "0.7.3"
 serde = { version = "1.0.162", features = ["derive"] }
 serde_derive = "1.0.162"
+ndarray = {version = "0.15.6", features = ["serde"]} 
+norman = "0.0.4"
+plotters = "0.3.5"
+rand = "0.8"
