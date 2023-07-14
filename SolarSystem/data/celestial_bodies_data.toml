@@ -1,0 +1,81 @@
+number_of_bodies = 8
+
+[SolarSystem.Mercury]
+semi_major_axis_km = 57909226.5
+eccentricity = 0.20563593
+inclination_degrees = 7.00497902
+mean_longitude_degrees = 252.2503235
+longitude_of_perihelion_degrees = 77.45779628
+longitude_of_the_ascending_node_degrees = 48.33076593
+meanradius_km = 2439.4
+mass_kg = 3.3010299999999994e+23
+
+[SolarSystem.Venus]
+semi_major_axis_km = 108209474.5
+eccentricity = 0.00677672
+inclination_degrees = 3.39467605
+mean_longitude_degrees = 181.9790995
+longitude_of_perihelion_degrees = 131.60246718
+longitude_of_the_ascending_node_degrees = 76.67984255
+meanradius_km = 6051.8
+mass_kg = 4.867309999999999e+24
+
+[SolarSystem.Earth]
+semi_major_axis_km = 149598261.2
+eccentricity = 0.01671123
+inclination_degrees = -1.531e-5
+mean_longitude_degrees = 100.46457166
+longitude_of_perihelion_degrees = 102.93768193
+longitude_of_the_ascending_node_degrees = 0.0
+meanradius_km = 6371.0084
+mass_kg = 5.97217e+24
+
+[SolarSystem.Mars]
+semi_major_axis_km = 227943822.4
+eccentricity = 0.0933941
+inclination_degrees = 1.84969142
+mean_longitude_degrees = -4.55343205
+longitude_of_perihelion_degrees = -23.94362959
+longitude_of_the_ascending_node_degrees = 49.55953891
+meanradius_km = 3389.5
+mass_kg = 6.41691e+23
+
+[SolarSystem.Jupiter]
+semi_major_axis_km = 778340816.7
+eccentricity = 0.04838624
+inclination_degrees = 1.30439695
+mean_longitude_degrees = 34.39644051
+longitude_of_perihelion_degrees = 14.72847983
+longitude_of_the_ascending_node_degrees = 100.47390909
+meanradius_km = 69911.0
+mass_kg = 1.898125e+27
+
+[SolarSystem.Saturn]
+semi_major_axis_km = 1426666414.2
+eccentricity = 0.05386179
+inclination_degrees = 2.48599187
+mean_longitude_degrees = 49.95424423
+longitude_of_perihelion_degrees = 92.59887831
+longitude_of_the_ascending_node_degrees = 113.66242448
+meanradius_km = 58232.0
+mass_kg = 5.68317e+26
+
+[SolarSystem.Uranus]
+semi_major_axis_km = 2870658170.7
+eccentricity = 0.04725744
+inclination_degrees = 0.77263783
+mean_longitude_degrees = 313.23810451
+longitude_of_perihelion_degrees = 170.9542763
+longitude_of_the_ascending_node_degrees = 74.01692503
+meanradius_km = 25362.0
+mass_kg = 8.68099e+25
+
+[SolarSystem.Neptune]
+semi_major_axis_km = 4498396417.0
+eccentricity = 0.00859048
+inclination_degrees = 1.77004347
+mean_longitude_degrees = -55.12002969
+longitude_of_perihelion_degrees = 44.96476227
+longitude_of_the_ascending_node_degrees = 131.78422574
+meanradius_km = 24622.0
+mass_kg = 1.024092e+26
