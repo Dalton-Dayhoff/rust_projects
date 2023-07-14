@@ -75,8 +75,9 @@ fn main() {
                         Ok(answer) => turn = answer,
                         Err(_) => {println!("Please enter a string"); continue;}
                     }
-                let generalized_turn = turn.to_lowercase();
-                if generalized_turn == "hit"{
+                println!("{}", turn);
+                
+                if turn.eq_ignore_ascii_case("hit"){
                     hand.add_card(card_deck.deal_card());
                     print!("Your new hand is ");
                     hand.print_hand();
@@ -93,7 +94,7 @@ fn main() {
                         break;
                     }
                 }
-                else if generalized_turn == "stay" {
+                else if turn.eq_ignore_ascii_case("stay") {
                     break;
                 }
                 else {
@@ -128,7 +129,7 @@ fn main() {
 
 }
 
-fn dealer_hit(mut dealer_score: &mut i32, mut dealer_hand: &mut Hand, mut card_deck: &mut Deck) {
+fn dealer_hit(dealer_score: &mut i32, dealer_hand: &mut Hand, card_deck: &mut Deck) {
     dealer_hand.add_card(card_deck.deal_card());
     *dealer_score = dealer_hand.calculate_sum();
 }
