@@ -1,0 +1,54 @@
+METAHEURISTIC OPTIMIZATION
+optimization: find x such that min/max of F(x)
+	exact solutions are hard to find/inefficient
+	metaheuristics give a good solution (SA is a version of this)
+Metaheuristics: general set of rules that can be applied to various problems
+	tend to mimic well-known natural processes from sciences or such
+	DEFINITION: A metaheuristic is a high-level problem-independent algorithmic framework that provides a set of guidelines or strategies to develop heuristic optimization algorithms. The term is also used to refer to a problem-specific implementation of a heuristic optimization algorithm according to the guidelines expressed in such a framework. 
+	SA is a single-solution-based metaheuristic
+		meaning it is more exploitation based
+	population based are more exploration
+		number of control variables = search space dimension
+		number of agents = size of population
+		agent: candidat solution represented by set of control variables
+	more like a cooking style such as 'cajun' rather than a specific recipe such as carbonara
+	criticisms:
+		many seem to be similar and can all produce the "best" results
+		it is hard to say if one type is better than another but rather one is just a better fit for the problem
+		"new" methods are sometimes just a new wrapping on a different method of optimizaiton
+
+THEORY AND PRACTICE OF SIMULATED ANNEALING
+	Provides a means to escape local optima by allowing hill-climbing moves in hopes of finding global optima
+	Acutal simulated annealing:
+		crystalline solid is heated and then cooled very slowly until it achieves its most regular possible crystal lattice configuration
+			- minimum lattic energy state
+		if done sufficiently slowly, the solid has superior structural integrity
+	Basics of simulated annealing
+		each iteration generates two solutions, the current and the new
+		better solutions are always accepted, worse solutions are accepted based off a paremter
+		hill-climbing becomes less frequent as temperature reaches min temp
+	Basic algorithm
+		set initial parameters
+		while temp > min_temp
+			for m in range(repition_schedule (M_k)
+				generate new solution
+				check if better or worse than current
+				if better -> replace with new solution
+				if worse -> replace with new solution if probability allows
+	Parameters
+		Omega: solution set
+		k: temp change counter
+		t_k: cooling schedule
+		T: initial temp
+		M_k: repition schedule, number of iterations at each temperautre
+		pi_k: the stationary distrubution of probability values
+	Markov Chains:
+		To find probability of next value, only need previous value
+		probabilities add up to 1
+		transition matrix: matrix of probabilities of doing each option
+	Convergance:
+		Theorem 10.1: two major parts
+		- sum of all probabilities given a specific solution is 1
+		- pi_k converges to a stationary distribution
+
+		
