@@ -3,3 +3,4 @@ blackjack/target/
 blackjack/.vscode
 SolarSystem/rust_modules/target
 .DS_Store/
+sudoku/target/

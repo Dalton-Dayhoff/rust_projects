@@ -1,7 +1,6 @@
 use serde_derive::Deserialize;
-use std::{fs, vec};
+use std::vec;
 use rand::{seq::SliceRandom, Rng};
-use toml;
 
 #[derive(Deserialize, Debug, Clone, Copy)]
 enum Difficulty{
@@ -17,6 +16,7 @@ pub struct SimulatedAnnealingParams{
     pub initial_temp: f64,
     pub cooling_rate: f64,
     pub final_temp: f64,
+    pub max_pass_iter: i32
 }
 
 #[derive(Deserialize, Clone)]
